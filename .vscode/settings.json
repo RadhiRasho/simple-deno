@@ -1,0 +1,19 @@
+{
+    "deno.enable": true,
+    "deno.codeLens.implementations": true,
+    "deno.config": "./deno.json",
+    "deno.lint": true,
+    "deno.cacheOnSave": true,
+    "deno.suggest.imports.autoDiscover": true,
+    "deno.suggest.imports.hosts": {
+        "https://deno.land": true
+    },
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "[json]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    }
+}
