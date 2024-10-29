@@ -5,6 +5,7 @@
 	},
 	"imports": {
 		"@cliffy/prompt": "jsr:@cliffy/prompt@1.0.0-rc.7",
+		"@std/bytes": "jsr:@std/bytes@^1.0.2",
 		"@std/csv": "jsr:@std/csv@^1.0.3",
 		"@std/encoding": "jsr:@std/encoding@^1.0.5",
 		"@std/fs": "jsr:@std/fs@^1.0.5",
