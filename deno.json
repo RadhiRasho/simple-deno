@@ -1,14 +1,15 @@
 {
-	"tasks": {
-		"dev": "deno run -A main.ts"
-	},
 	"compilerOptions": {
-		"strict": true,
-		"lib": ["deno.ns", "dom"]
+		"lib": ["deno.ns", "dom"],
+		"strict": true
 	},
 	"imports": {
 		"@cliffy/prompt": "jsr:@cliffy/prompt@1.0.0-rc.7",
 		"@std/fs": "jsr:@std/fs@^1.0.5",
-		"@std/path": "jsr:@std/path@^1.0.7"
+		"@std/path": "jsr:@std/path@^1.0.7",
+		"@std/toml": "jsr:@std/toml@^1.0.1"
+	},
+	"tasks": {
+		"dev": "deno run -A main.ts"
 	}
 }
