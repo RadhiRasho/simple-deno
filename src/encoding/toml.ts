@@ -1,4 +1,4 @@
-import { parse, stringify } from "jsr:@std/toml";
+import { parse, stringify } from "@std/toml";
 
 const text = `
 int = 1_000_000

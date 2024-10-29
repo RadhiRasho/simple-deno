@@ -1,5 +1,5 @@
-import { decodeBase64, encodeBase64 } from "jsr:@std/encoding/base64";
-import { decodeHex, encodeHex } from "jsr:@std/encoding/hex";
+import { decodeBase64, encodeBase64 } from "@std/encoding/base64";
+import { decodeHex, encodeHex } from "@std/encoding/hex";
 
 const base64Encoded = encodeBase64("somestringtoencode");
 

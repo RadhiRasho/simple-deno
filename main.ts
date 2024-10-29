@@ -1,6 +1,5 @@
-import { type WalkEntry, expandGlob } from "jsr:@std/fs";
 import { Input, Select } from "@cliffy/prompt";
-import type { Person } from "./src/basics/ts-support.ts";
+import { type WalkEntry, expandGlob } from "@std/fs";
 
 Deno.addSignalListener("SIGINT", () => {
 	console.log("\n\n❌ Process Interrupted!");
