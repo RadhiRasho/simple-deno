@@ -6,9 +6,15 @@ Deno.addSignalListener("SIGINT", () => {
 	Deno.exit(0);
 });
 
-let [fileName] = Deno.args;
+let filename = Deno.args[0];
 
-if (!fileName) {
+let rest: string[] = [];
+
+if (Deno.args.length > 1) {
+	rest = Deno.args.slice(1);
+}
+
+if (!filename) {
 	const answer = await Input.prompt({
 		message: "Enter File name to run (Full or Partial)",
 		validate(value) {
@@ -20,16 +26,16 @@ if (!fileName) {
 		cbreak: true,
 	});
 
-	fileName = answer.toLowerCase();
+	filename = answer.toLowerCase();
 }
 
 console.log();
 
 const data = await Array.fromAsync(
-	expandGlob(`**/*${fileName}*`, { root: "./src" }),
+	expandGlob(`**/*${filename}*`, { root: "./src" }),
 );
 
-const files = data.filter((x) => x.name.includes(fileName));
+const files = data.filter((x) => x.name.includes(filename));
 
 let file = files.length === 1 ? files[0] : undefined;
 
@@ -46,7 +52,7 @@ if (files.length > 1) {
 }
 
 const command = new Deno.Command(Deno.execPath(), {
-	args: ["-A", file?.path ?? ""],
+	args: ["-A", file?.path ?? "", ...rest],
 });
 
 try {
