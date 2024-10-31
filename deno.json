@@ -16,6 +16,7 @@
     "@std/yaml": "jsr:@std/yaml@^1.0.5"
   },
   "tasks": {
-    "dev": "deno run -A main.ts"
+    "dev": "deno run -A main.ts",
+    "pre:commit": "deno fmt --check"
   }
 }
