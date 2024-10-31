@@ -6,13 +6,13 @@ console.log(`Hello ${name}, I like ${food}!`);
 import { parseArgs } from "@std/cli";
 
 const flags = parseArgs(Deno.args, {
-	boolean: ["help", "color"],
-	string: ["version"],
-	default: {
-		color: true,
-		version: "0.0.0",
-	},
-	negatable: ["color", "version"],
+  boolean: ["help", "color"],
+  string: ["version"],
+  default: {
+    color: true,
+    version: "0.0.0",
+  },
+  negatable: ["color", "version"],
 });
 
 console.log("Want help?", flags.help);

@@ -8,8 +8,8 @@ https://deno.dev,30,23
 `;
 
 let data = parse(text, {
-	skipFirstRow: true,
-	strip: true,
+  skipFirstRow: true,
+  strip: true,
 });
 
 console.log(data);
@@ -23,18 +23,18 @@ https://deno.land/x,20,15
 https://deno.dev,30,23
 `;
 data = parse(text, {
-	columns: ["url", "views", "likes"],
+  columns: ["url", "views", "likes"],
 });
 console.log(data[0].url); // https://deno.land
 console.log(data[0].views); // 10
 console.log(data[0].likes); // 7
 
 const obj = [
-	{ mascot: "dino", fans: { old: 100, new: 200 } },
-	{ mascot: "bread", fans: { old: 5, new: 2 } },
+  { mascot: "dino", fans: { old: 100, new: 200 } },
+  { mascot: "bread", fans: { old: 5, new: 2 } },
 ];
 const csv = stringify(obj, {
-	columns: ["mascot", ["fans", "old"], ["fans", "new"]],
+  columns: ["mascot", ["fans", "old"], ["fans", "new"]],
 });
 console.log(csv);
 // mascot,new

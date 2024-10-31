@@ -18,11 +18,11 @@ console.log(data.int);
 console.log(data?.bin);
 
 const obj = {
-	ping: "pong",
-	complex: [
-		{ name: "bob", age: 10 },
-		{ name: "alice", age: 12 },
-	],
+  ping: "pong",
+  complex: [
+    { name: "bob", age: 10 },
+    { name: "alice", age: 12 },
+  ],
 };
 
 const toml = stringify(obj);

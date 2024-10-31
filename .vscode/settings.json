@@ -1,11 +1,11 @@
 {
-	"deno.enable": true,
-	"deno.config": "./deno.json",
-	"deno.lint": true,
-	"deno.cacheOnSave": true,
-	"deno.suggest.imports.autoDiscover": true,
-	"deno.suggest.imports.hosts": {
-		"https://deno.land": true
-	},
-	"editor.defaultFormatter": "biomejs.biome"
+  "deno.enable": true,
+  "deno.config": "./deno.json",
+  "deno.lint": true,
+  "deno.cacheOnSave": true,
+  "deno.suggest.imports.autoDiscover": true,
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": true
+  },
+  "editor.defaultFormatter": "denoland.vscode-deno"
 }

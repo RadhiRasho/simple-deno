@@ -1,21 +1,21 @@
 {
-	"compilerOptions": {
-		"lib": ["deno.ns", "dom"],
-		"strict": true
-	},
-	"imports": {
-		"@cliffy/prompt": "jsr:@cliffy/prompt@1.0.0-rc.7",
-		"@std/assert": "jsr:@std/assert@^1.0.6",
-		"@std/bytes": "jsr:@std/bytes@^1.0.2",
-		"@std/cli": "jsr:@std/cli@^1.0.6",
-		"@std/csv": "jsr:@std/csv@^1.0.3",
-		"@std/encoding": "jsr:@std/encoding@^1.0.5",
-		"@std/fs": "jsr:@std/fs@^1.0.5",
-		"@std/path": "jsr:@std/path@^1.0.7",
-		"@std/toml": "jsr:@std/toml@^1.0.1",
-		"@std/yaml": "jsr:@std/yaml@^1.0.5"
-	},
-	"tasks": {
-		"dev": "deno run -A main.ts"
-	}
+  "compilerOptions": {
+    "lib": ["deno.ns", "dom"],
+    "strict": true
+  },
+  "imports": {
+    "@cliffy/prompt": "jsr:@cliffy/prompt@1.0.0-rc.7",
+    "@std/assert": "jsr:@std/assert@^1.0.6",
+    "@std/bytes": "jsr:@std/bytes@^1.0.2",
+    "@std/cli": "jsr:@std/cli@^1.0.6",
+    "@std/csv": "jsr:@std/csv@^1.0.3",
+    "@std/encoding": "jsr:@std/encoding@^1.0.5",
+    "@std/fs": "jsr:@std/fs@^1.0.5",
+    "@std/path": "jsr:@std/path@^1.0.7",
+    "@std/toml": "jsr:@std/toml@^1.0.1",
+    "@std/yaml": "jsr:@std/yaml@^1.0.5"
+  },
+  "tasks": {
+    "dev": "deno run -A main.ts"
+  }
 }
