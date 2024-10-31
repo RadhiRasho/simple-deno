@@ -1,4 +1,3 @@
-
 const name = Deno.args[0];
 const food = Deno.args[1];
 
