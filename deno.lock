@@ -5,6 +5,7 @@
     "jsr:@cliffy/internal@1.0.0-rc.7": "1.0.0-rc.7",
     "jsr:@cliffy/keycode@1.0.0-rc.7": "1.0.0-rc.7",
     "jsr:@cliffy/prompt@1.0.0-rc.7": "1.0.0-rc.7",
+    "jsr:@hono/hono@^4.6.9": "4.6.9",
     "jsr:@std/assert@^1.0.6": "1.0.7",
     "jsr:@std/assert@~1.0.6": "1.0.7",
     "jsr:@std/bytes@^1.0.2": "1.0.3",
@@ -53,6 +54,9 @@
         "jsr:@std/path@~1.0.6",
         "jsr:@std/text"
       ]
+    },
+    "@hono/hono@4.6.9": {
+      "integrity": "4d4975f5c023d4416d26e6dd4a498c56e59958561733f56f55a9be57f023603b"
     },
     "@std/assert@1.0.7": {
       "integrity": "64ce9fac879e0b9f3042a89b3c3f8ccfc9c984391af19e2087513a79d73e28c3",
@@ -118,6 +122,7 @@
   "workspace": {
     "dependencies": [
       "jsr:@cliffy/prompt@1.0.0-rc.7",
+      "jsr:@hono/hono@^4.6.9",
       "jsr:@std/assert@^1.0.6",
       "jsr:@std/bytes@^1.0.2",
       "jsr:@std/cli@^1.0.6",
