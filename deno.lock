@@ -24,6 +24,7 @@
     "jsr:@std/media-types@^1.0.3": "1.0.3",
     "jsr:@std/net@^1.0.4": "1.0.4",
     "jsr:@std/path@^1.0.7": "1.0.8",
+    "jsr:@std/path@^1.0.8": "1.0.8",
     "jsr:@std/path@~1.0.6": "1.0.8",
     "jsr:@std/streams@^1.0.4": "1.0.8",
     "jsr:@std/streams@^1.0.7": "1.0.8",
@@ -153,7 +154,7 @@
       "jsr:@std/fmt@^1.0.3",
       "jsr:@std/fs@^1.0.5",
       "jsr:@std/http@^1.0.9",
-      "jsr:@std/path@^1.0.7",
+      "jsr:@std/path@^1.0.8",
       "jsr:@std/toml@^1.0.1",
       "jsr:@std/yaml@^1.0.5"
     ]
