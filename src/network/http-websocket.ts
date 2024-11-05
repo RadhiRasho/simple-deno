@@ -11,8 +11,9 @@ Deno.serve((req) => {
 
 	socket.addEventListener("message", (event) => {
 		if (event.data) {
-			socket.send("H is whispering sweet nothings");
+			socket.send(event.data);
 		}
+		socket.send("H is whispering sweet nothings");
 	});
 
 	return response;

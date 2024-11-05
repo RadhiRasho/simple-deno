@@ -18,11 +18,15 @@
     "jsr:@std/fmt@^1.0.3": "1.0.3",
     "jsr:@std/fmt@~1.0.2": "1.0.3",
     "jsr:@std/fs@^1.0.5": "1.0.5",
+    "jsr:@std/http@^1.0.9": "1.0.9",
     "jsr:@std/internal@^1.0.5": "1.0.5",
     "jsr:@std/io@~0.224.9": "0.224.9",
+    "jsr:@std/media-types@^1.0.3": "1.0.3",
+    "jsr:@std/net@^1.0.4": "1.0.4",
     "jsr:@std/path@^1.0.7": "1.0.8",
     "jsr:@std/path@~1.0.6": "1.0.8",
     "jsr:@std/streams@^1.0.4": "1.0.8",
+    "jsr:@std/streams@^1.0.7": "1.0.8",
     "jsr:@std/text@~1.0.7": "1.0.8",
     "jsr:@std/toml@^1.0.1": "1.0.1",
     "jsr:@std/yaml@^1.0.5": "1.0.5"
@@ -76,7 +80,7 @@
     "@std/csv@1.0.3": {
       "integrity": "623acf0dcb88d62ba727c3611ad005df7f109ede8cac833e3986f540744562e5",
       "dependencies": [
-        "jsr:@std/streams"
+        "jsr:@std/streams@^1.0.4"
       ]
     },
     "@std/encoding@1.0.5": {
@@ -91,11 +95,29 @@
         "jsr:@std/path@^1.0.7"
       ]
     },
+    "@std/http@1.0.9": {
+      "integrity": "d409fc319a5e8d4a154e576c758752e9700282d74f31357a12fec6420f9ecb6c",
+      "dependencies": [
+        "jsr:@std/cli",
+        "jsr:@std/encoding@^1.0.5",
+        "jsr:@std/fmt@^1.0.3",
+        "jsr:@std/media-types",
+        "jsr:@std/net",
+        "jsr:@std/path@^1.0.7",
+        "jsr:@std/streams@^1.0.7"
+      ]
+    },
     "@std/internal@1.0.5": {
       "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
     },
     "@std/io@0.224.9": {
       "integrity": "4414664b6926f665102e73c969cfda06d2c4c59bd5d0c603fd4f1b1c840d6ee3"
+    },
+    "@std/media-types@1.0.3": {
+      "integrity": "b12d30a7852f7578f4d210622df713bbfd1cbdd9b4ec2eaf5c1845ab70bab159"
+    },
+    "@std/net@1.0.4": {
+      "integrity": "2f403b455ebbccf83d8a027d29c5a9e3a2452fea39bb2da7f2c04af09c8bc852"
     },
     "@std/path@1.0.8": {
       "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
@@ -130,6 +152,7 @@
       "jsr:@std/encoding@^1.0.5",
       "jsr:@std/fmt@^1.0.3",
       "jsr:@std/fs@^1.0.5",
+      "jsr:@std/http@^1.0.9",
       "jsr:@std/path@^1.0.7",
       "jsr:@std/toml@^1.0.1",
       "jsr:@std/yaml@^1.0.5"
