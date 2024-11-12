@@ -1,5 +1,5 @@
 import { Input, Select } from "@cliffy/prompt";
-import { type WalkEntry, expandGlob } from "@std/fs";
+import { expandGlob, type WalkEntry } from "@std/fs";
 
 Deno.addSignalListener("SIGINT", () => {
 	console.log("\n\n❌ Process Interrupted!");
