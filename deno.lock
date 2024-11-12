@@ -8,6 +8,7 @@
     "jsr:@hono/hono@^4.6.9": "4.6.9",
     "jsr:@std/assert@^1.0.6": "1.0.7",
     "jsr:@std/assert@~1.0.6": "1.0.7",
+    "jsr:@std/async@^1.0.8": "1.0.8",
     "jsr:@std/bytes@^1.0.2": "1.0.3",
     "jsr:@std/bytes@^1.0.3": "1.0.3",
     "jsr:@std/cli@^1.0.6": "1.0.6",
@@ -68,6 +69,9 @@
       "dependencies": [
         "jsr:@std/internal"
       ]
+    },
+    "@std/async@1.0.8": {
+      "integrity": "c057c5211a0f1d12e7dcd111ab430091301b8d64b4250052a79d277383bc3ba7"
     },
     "@std/bytes@1.0.3": {
       "integrity": "e5d5b9e685966314e4edb4be60dfc4bd7624a075bfd4ec8109252b4320f76452"
@@ -147,6 +151,7 @@
       "jsr:@cliffy/prompt@1.0.0-rc.7",
       "jsr:@hono/hono@^4.6.9",
       "jsr:@std/assert@^1.0.6",
+      "jsr:@std/async@^1.0.8",
       "jsr:@std/bytes@^1.0.2",
       "jsr:@std/cli@^1.0.6",
       "jsr:@std/csv@^1.0.3",
