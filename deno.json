@@ -19,6 +19,7 @@
 		"@std/path": "jsr:@std/path@^1.0.8",
 		"@std/toml": "jsr:@std/toml@^1.0.1",
 		"@std/ulid": "jsr:@std/ulid@^1.0.0",
+		"@std/uuid": "jsr:@std/uuid@^1.0.4",
 		"@std/yaml": "jsr:@std/yaml@^1.0.5"
 	},
 	"tasks": {
