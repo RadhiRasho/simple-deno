@@ -227,6 +227,7 @@
       "jsr:@std/async@^1.0.8",
       "jsr:@std/bytes@^1.0.2",
       "jsr:@std/cli@^1.0.6",
+      "jsr:@std/crypto@^1.0.3",
       "jsr:@std/csv@^1.0.3",
       "jsr:@std/encoding@^1.0.5",
       "jsr:@std/fmt@^1.0.3",
