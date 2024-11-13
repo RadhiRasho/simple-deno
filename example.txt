@@ -1,1 +1,2 @@
-Hello from symlink!
+I love Deno!
+I love Deno!I love Deno!
