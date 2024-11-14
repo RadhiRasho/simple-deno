@@ -1,4 +1,4 @@
-import { RetryError, type RetryOptions, retry } from "@std/async";
+import { retry, RetryError, type RetryOptions } from "@std/async";
 
 function fn() {
 	console.log("hello world");
