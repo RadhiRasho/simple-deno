@@ -28,10 +28,10 @@ console.log(`Encrypted Data: ${new Uint8Array(encryptedData)}`); // Log the encr
 const decryptedData = await crypto.subtle.decrypt(
 	{
 		name: "AES-GCM",
-		iv,
+		iv, // Same IV used for encryption
 	},
-	key,
-	encryptedData,
+	key, // The same key used for encryption
+	encryptedData, // The encrypted data to decrypt
 );
 
 const decryptedText = new TextDecoder().decode(decryptedData);
