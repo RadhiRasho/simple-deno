@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"lib": ["deno.ns", "dom"],
+		"lib": ["deno.ns", "dom", "deno.unstable", "worker-options"],
 		"strict": true
 	},
 	"imports": {
@@ -34,5 +34,6 @@
 			"tags": ["recommended", "jsr"]
 		},
 		"report": "pretty"
-	}
+	},
+	"unstable": ["kv", "worker-options"]
 }

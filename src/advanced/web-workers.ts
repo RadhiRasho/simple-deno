@@ -1,4 +1,3 @@
-// deno-lint-ignore-file
 const worker = new Worker(new URL("./worker.ts", import.meta.url).href, {
 	type: "module",
 });
@@ -9,7 +8,6 @@ worker.postMessage({
 
 const worker2 = new Worker(new URL("./worker.ts", import.meta.url).href, {
 	type: "module",
-	//@ts-ignore
 	deno: {
 		permissions: {
 			read: [
