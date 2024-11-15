@@ -52,7 +52,7 @@ if (files.length > 1) {
 }
 
 const command = new Deno.Command(Deno.execPath(), {
-	args: ["-A", file?.path ?? "", ...rest],
+	args: ["-A", "--unstable-worker-options", file?.path ?? "", ...rest],
 });
 
 try {
