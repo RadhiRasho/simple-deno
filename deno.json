@@ -1,9 +1,9 @@
 {
 	"compilerOptions": {
-		"lib": ["deno.ns", "dom", "deno.unstable", "worker-options", "cron"],
+		"lib": ["deno.ns", "dom", "deno.unstable"],
 		"strict": true
 	},
-	"unstable": ["kv", "worker-options", "cron"],
+	"unstable": ["kv", "worker-options", "cron", "net"],
 	"imports": {
 		"@cliffy/prompt": "jsr:@cliffy/prompt@1.0.0-rc.7",
 		"@db/sqlite": "jsr:@db/sqlite@^0.12.0",

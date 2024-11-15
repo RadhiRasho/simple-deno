@@ -4,7 +4,6 @@
 	"deno.lint": true,
 	"deno.cacheOnSave": true,
 	"deno.suggest.imports.autoDiscover": true,
-	"deno.unstable": ["kv"],
 	"deno.suggest.imports.hosts": {
 		"https://deno.land": true
 	},
