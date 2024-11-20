@@ -12,6 +12,7 @@
 		"@std/async": "jsr:@std/async@^1.0.8",
 		"@std/bytes": "jsr:@std/bytes@^1.0.2",
 		"@std/cli": "jsr:@std/cli@^1.0.6",
+		"@std/collections": "jsr:@std/collections@^1.0.9",
 		"@std/crypto": "jsr:@std/crypto@^1.0.3",
 		"@std/csv": "jsr:@std/csv@^1.0.3",
 		"@std/encoding": "jsr:@std/encoding@^1.0.5",

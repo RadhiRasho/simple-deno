@@ -17,6 +17,7 @@
     "jsr:@std/bytes@^1.0.3": "1.0.4",
     "jsr:@std/cli@^1.0.6": "1.0.6",
     "jsr:@std/collections@^1.0.5": "1.0.9",
+    "jsr:@std/collections@^1.0.9": "1.0.9",
     "jsr:@std/crypto@^1.0.3": "1.0.3",
     "jsr:@std/csv@^1.0.3": "1.0.3",
     "jsr:@std/encoding@0.221": "0.221.0",
@@ -201,7 +202,7 @@
     "@std/toml@1.0.1": {
       "integrity": "b55b407159930f338d384b1f8fd317c8e8a35e27ebb8946155f49e3a158d16c4",
       "dependencies": [
-        "jsr:@std/collections"
+        "jsr:@std/collections@^1.0.5"
       ]
     },
     "@std/ulid@1.0.0": {
@@ -227,6 +228,7 @@
       "jsr:@std/async@^1.0.8",
       "jsr:@std/bytes@^1.0.2",
       "jsr:@std/cli@^1.0.6",
+      "jsr:@std/collections@^1.0.9",
       "jsr:@std/crypto@^1.0.3",
       "jsr:@std/csv@^1.0.3",
       "jsr:@std/encoding@^1.0.5",

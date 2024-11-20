@@ -19,17 +19,47 @@ await kv.set(["players", player1.username], player1);
 await kv.set(["players", player2.username], player2);
 await kv.set(["players", player3.username], player3);
 
-console.log(
-	"Players",
-	await kv.getMany([
-		["players", player1.username],
-		["players", player2.username],
-		["players", player3.username],
-	]),
-);
-
 player3.rank = Rank.Gold;
+await kv.set(["players", player3.username], player3);
 
-await kv.set(["Players", player3.username], player3);
+const record = await kv.get(["players", "alice"]);
 
-console.log("Players", await kv.get(["players", player3.username]));
+const alice: Player = record.value as Player;
+
+console.log(record.key, record.versionstamp, alice);
+
+const [record1, record2] = await kv.getMany([
+	["players", "carlos"],
+	["players", "briana"],
+]);
+
+console.log(record1, record2);
+
+const records = kv.list({ prefix: ["players"] });
+
+const players = [];
+
+for await (const res of records) {
+	players.push(res.value as Player);
+}
+
+console.log(players);
+
+await kv.delete(["players", "carlos"]);
+
+const aliceScoreKey = ["scores", "alice"];
+
+await kv.set(aliceScoreKey, new Deno.KvU64(0n));
+
+await kv
+	.atomic()
+	.mutate({
+		type: "sum",
+		key: aliceScoreKey,
+		value: new Deno.KvU64(10n),
+	})
+	.commit();
+
+const newScore = (await kv.get<Deno.KvU64>(aliceScoreKey)).value;
+
+console.log("Alice's new score is: ", newScore);
