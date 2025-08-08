@@ -4,9 +4,11 @@ function handler(_req: Request): Response {
 	const body = new ReadableStream({
 		start(controller) {
 			timer = setInterval(() => {
-				const message = `It is ${new Date().toISOString()} \n`;
+				const timeStamp = new Date().toISOString();
+				const message = `It is ${timeStamp} \n`;
 
-				controller.enqueue(new TextEncoder().encode(message));
+				const encoded = new TextEncoder().encode(message);
+				controller.enqueue(encoded);
 			});
 		},
 
@@ -19,7 +21,7 @@ function handler(_req: Request): Response {
 
 	return new Response(body, {
 		headers: {
-			"content-type": "text/plain",
+			"Content-Type": "text/plain",
 			"x-content-type-options": "nosniff",
 		},
 	});
