@@ -1,8 +1,8 @@
-const bytes = await Deno.readFile("hello.txt");
+await Deno.readFile("./tmp/hello.txt");
 
-const text = await Deno.readTextFile("hello.txt");
+await Deno.readTextFile("./tmp/hello.txt");
 
-const file = await Deno.open("hello.txt");
+const file = await Deno.open("./tmp/hello.txt");
 
 const buffer = new Uint8Array(5);
 
@@ -24,11 +24,11 @@ await file.seek(0, Deno.SeekMode.Start);
 
 file.close();
 
-Deno.readFileSync("hello.txt");
+Deno.readFileSync("./tmp/hello.txt");
 
-Deno.readTextFileSync("hello.txt");
+Deno.readTextFileSync("./tmp/hello.txt");
 
-const f = Deno.openSync("hello.txt");
+const f = Deno.openSync("./tmp/hello.txt");
 
 f.seekSync(6, Deno.SeekMode.Start);
 

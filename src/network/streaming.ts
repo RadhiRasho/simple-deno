@@ -1,5 +1,5 @@
 function handler(_req: Request): Response {
-	let timer: number | undefined = undefined;
+	let timer: number | undefined;
 
 	const body = new ReadableStream({
 		start(controller) {

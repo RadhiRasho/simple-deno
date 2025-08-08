@@ -1,6 +1,9 @@
 import { sleep } from "../utils/index.ts";
 
-const output = await Deno.open("./tmp/example.txt", { create: true, append: true });
+const output = await Deno.open("./tmp/example.txt", {
+	create: true,
+	append: true,
+});
 
 const outputWriter = output.writable.getWriter();
 

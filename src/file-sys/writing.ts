@@ -1,16 +1,16 @@
 const bytes = new Uint8Array([72, 101, 108, 108, 111]);
 
-await Deno.writeFile("hello.txt", bytes, { mode: 0o644 });
+await Deno.writeFile("./tmp/hello.txt", bytes, { mode: 0o644 });
 
-await Deno.writeTextFile("hello.txt", "Hello World");
+await Deno.writeTextFile("./tmp/hello.txt", "Hello World");
 
 await Deno.writeTextFile("server.log", "Request: ...\n", { append: true });
 
-Deno.writeFileSync("hello.txt", bytes);
+Deno.writeFileSync("./tmp/hello.txt", bytes);
 
-Deno.writeTextFileSync("hello.txt", "Hello World");
+Deno.writeTextFileSync("./tmp/hello.txt", "Hello World");
 
-const file = await Deno.create("hello.txt");
+const file = await Deno.create("./tmp/hello.txt");
 
 const written = await file.write(bytes);
 

@@ -15,9 +15,9 @@ const data = new TextEncoder().encode("deno.land");
 console.log(`UUID V3: ${await v3.generate(NAMESPACE_URL, data)}`);
 
 console.log(
-	`UUID V4 (Validation): ${
-		v4.validate("6ec0bd7f-11c0-43da-975e-2a8ad9ebae0b")
-	}`,
+	`UUID V4 (Validation): ${v4.validate(
+		"6ec0bd7f-11c0-43da-975e-2a8ad9ebae0b",
+	)}`,
 );
 
 console.log(`UUID V5: ${await v5.generate(NAMESPACE_URL, data)}`);
