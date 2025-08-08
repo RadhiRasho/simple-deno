@@ -1,6 +1,5 @@
 {
 	"deno.enable": true,
-	"deno.config": "./deno.json",
 	"deno.lint": true,
 	"deno.cacheOnSave": true,
 	"deno.suggest.imports.autoDiscover": true,
